@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanatela.dev - Landing Pages e Sites que Convertem</title>
+    <meta name="description" content="Criamos landing pages e sites profissionais que geram resultados reais para sua empresa. Consultoria gratuita disponível.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-primary">Tanatela</span><span class="logo-secondary">.dev</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#inicio" class="nav-link">Início</a>
+                <a href="#produtos" class="nav-link">Produtos</a>
+                <a href="#sobre" class="nav-link">Sobre</a>
+                <a href="#contato" class="nav-link">Contato</a>
+                <button class="btn btn-primary nav-cta" onclick="showWhatsAppModal()">
+                    <i data-lucide="message-circle"></i>
+                    Fale Conosco
+                </button>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-background">
+            <div class="particles" id="particles"></div>
+            <div class="floating-elements">
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i data-lucide="award"></i>
+                    <span>Agência Digital Premium</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="typewriter" id="typewriter"></span>
+                    <br>
+                    <span class="highlight">que convertem</span>
+                </h1>
+                
+                <p class="hero-description">
+                    Transformamos sua ideia em um <span class="text-highlight">negócio digital de sucesso</span>. 
+                    Criamos landing pages e sites que não apenas impressionam, mas 
+                    <span class="text-success">geram resultados reais</span> para sua empresa.
+                </p>
+                
+                <div class="hero-actions">
+                    <button class="btn btn-primary btn-lg" onclick="showWhatsAppModal('Consultoria Gratuita')">
+                        <i data-lucide="message-circle"></i>
+                        Consultoria Gratuita
+                        <i data-lucide="arrow-right"></i>
+                    </button>
+                    <button class="btn btn-secondary btn-lg" onclick="scrollToSection('produtos')">
+                        Ver Produtos
+                    </button>
+                </div>
+                
+                <!-- Stats -->
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <i data-lucide="code"></i>
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Projetos Entregues</div>
+                    </div>
+                    <div class="stat-item">
+                        <i data-lucide="users"></i>
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Clientes Satisfeitos</div>
+                    </div>
+                    <div class="stat-item">
+                        <i data-lucide="clock"></i>
+                        <div class="stat-number">24h</div>
+                        <div class="stat-label">Suporte Técnico</div>
+                    </div>
+                    <div class="stat-item">
+                        <i data-lucide="star"></i>
+                        <div class="stat-number">5★</div>
+                        <div class="stat-label">Avaliação Média</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="produtos" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Nossos <span class="highlight">Produtos</span>
+                </h2>
+                <p class="section-description">
+                    Soluções digitais completas para impulsionar seu negócio online
+                </p>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Landing Page Premium -->
+                <div class="product-card featured">
+                    <div class="product-badge">Mais Vendido</div>
+                    <div class="product-header">
+                        <h3 class="product-title">Landing Page Premium</h3>
+                        <p class="product-description">
+                            Landing page profissional otimizada para conversão com design responsivo e integração com WhatsApp
+                        </p>
+                    </div>
+                    
+                    <div class="product-pricing">
+                        <span class="price-original">R$ 897</span>
+                        <span class="price-current">R$ 497</span>
+                    </div>
+                    
+                    <ul class="product-features">
+                        <li><i data-lucide="check"></i> Design responsivo premium</li>
+                        <li><i data-lucide="check"></i> Otimização para conversão</li>
+                        <li><i data-lucide="check"></i> Integração WhatsApp</li>
+                        <li><i data-lucide="check"></i> Formulários inteligentes</li>
+                        <li><i data-lucide="check"></i> Analytics incluído</li>
+                        <li><i data-lucide="check"></i> Suporte 30 dias</li>
+                    </ul>
+                    
+                    <button class="btn btn-primary btn-full" onclick="showWhatsAppModal('Landing Page Premium')">
+                        <i data-lucide="message-circle"></i>
+                        Quero este produto
+                    </button>
+                </div>
+                
+                <!-- Site Institucional -->
+                <div class="product-card">
+                    <div class="product-header">
+                        <h3 class="product-title">Site Institucional</h3>
+                        <p class="product-description">
+                            Site completo para sua empresa com múltiplas páginas, blog e painel administrativo
+                        </p>
+                    </div>
+                    
+                    <div class="product-pricing">
+                        <span class="price-original">R$ 1.897</span>
+                        <span class="price-current">R$ 1.297</span>
+                    </div>
+                    
+                    <ul class="product-features">
+                        <li><i data-lucide="check"></i> Até 8 páginas</li>
+                        <li><i data-lucide="check"></i> Blog integrado</li>
+                        <li><i data-lucide="check"></i> Painel admin</li>
+                        <li><i data-lucide="check"></i> SEO otimizado</li>
+                        <li><i data-lucide="check"></i> Certificado SSL</li>
+                        <li><i data-lucide="check"></i> Backup automático</li>
+                    </ul>
+                    
+                    <button class="btn btn-primary btn-full" onclick="showWhatsAppModal('Site Institucional')">
+                        <i data-lucide="message-circle"></i>
+                        Quero este produto
+                    </button>
+                </div>
+                
+                <!-- E-commerce Completo -->
+                <div class="product-card premium">
+                    <div class="product-badge premium">Premium</div>
+                    <div class="product-header">
+                        <h3 class="product-title">E-commerce Completo</h3>
+                        <p class="product-description">
+                            Loja virtual completa com sistema de pagamento, gestão de produtos e relatórios
+                        </p>
+                    </div>
+                    
+                    <div class="product-pricing">
+                        <span class="price-original">R$ 3.497</span>
+                        <span class="price-current">R$ 2.497</span>
+                    </div>
+                    
+                    <ul class="product-features">
+                        <li><i data-lucide="check"></i> Produtos ilimitados</li>
+                        <li><i data-lucide="check"></i> Gateway de pagamento</li>
+                        <li><i data-lucide="check"></i> Gestão de estoque</li>
+                        <li><i data-lucide="check"></i> Relatórios de vendas</li>
+                        <li><i data-lucide="check"></i> App mobile</li>
+                        <li><i data-lucide="check"></i> Suporte premium</li>
+                    </ul>
+                    
+                    <button class="btn btn-primary btn-full" onclick="showWhatsAppModal('E-commerce Completo')">
+                        <i data-lucide="message-circle"></i>
+                        Quero este produto
+                    </button>
+                </div>
+                
+                <!-- Sistema Personalizado -->
+                <div class="product-card">
+                    <div class="product-header">
+                        <h3 class="product-title">Sistema Personalizado</h3>
+                        <p class="product-description">
+                            Desenvolvimento de sistema sob medida para suas necessidades específicas
+                        </p>
+                    </div>
+                    
+                    <div class="product-pricing">
+                        <span class="price-current">Sob consulta</span>
+                    </div>
+                    
+                    <ul class="product-features">
+                        <li><i data-lucide="check"></i> Desenvolvimento exclusivo</li>
+                        <li><i data-lucide="check"></i> Integração com APIs</li>
+                        <li><i data-lucide="check"></i> Dashboard personalizado</li>
+                        <li><i data-lucide="check"></i> Banco de dados robusto</li>
+                        <li><i data-lucide="check"></i> Documentação completa</li>
+                        <li><i data-lucide="check"></i> Treinamento incluído</li>
+                    </ul>
+                    
+                    <button class="btn btn-primary btn-full" onclick="showWhatsAppModal('Sistema Personalizado')">
+                        <i data-lucide="message-circle"></i>
+                        Quero este produto
+                    </button>
+                </div>
+                
+                <!-- Manutenção & Suporte -->
+                <div class="product-card">
+                    <div class="product-header">
+                        <h3 class="product-title">Manutenção & Suporte</h3>
+                        <p class="product-description">
+                            Plano mensal de manutenção e suporte técnico para seu site ou sistema
+                        </p>
+                    </div>
+                    
+                    <div class="product-pricing">
+                        <span class="price-current">R$ 197/mês</span>
+                    </div>
+                    
+                    <ul class="product-features">
+                        <li><i data-lucide="check"></i> Atualizações mensais</li>
+                        <li><i data-lucide="check"></i> Backup diário</li>
+                        <li><i data-lucide="check"></i> Monitoramento 24/7</li>
+                        <li><i data-lucide="check"></i> Suporte prioritário</li>
+                        <li><i data-lucide="check"></i> Relatórios mensais</li>
+                        <li><i data-lucide="check"></i> Sem fidelidade</li>
+                    </ul>
+                    
+                    <button class="btn btn-primary btn-full" onclick="showWhatsAppModal('Manutenção & Suporte')">
+                        <i data-lucide="message-circle"></i>
+                        Quero este produto
+                    </button>
+                </div>
+                
+                <!-- Consultoria Digital -->
+                <div class="product-card offer">
+                    <div class="product-badge offer">Oferta Limitada</div>
+                    <div class="product-header">
+                        <h3 class="product-title">Consultoria Digital</h3>
+                        <p class="product-description">
+                            Consultoria especializada para otimizar sua presença digital e aumentar conversões
+                        </p>
+                    </div>
+                    
+                    <div class="product-pricing">
+                        <span class="price-original">R$ 497</span>
+                        <span class="price-current">R$ 297</span>
+                    </div>
+                    
+                    <ul class="product-features">
+                        <li><i data-lucide="check"></i> Análise completa</li>
+                        <li><i data-lucide="check"></i> Estratégia personalizada</li>
+                        <li><i data-lucide="check"></i> Relatório detalhado</li>
+                        <li><i data-lucide="check"></i> Plano de ação</li>
+                        <li><i data-lucide="check"></i> 1 mês de suporte</li>
+                        <li><i data-lucide="check"></i> Garantia de resultado</li>
+                    </ul>
+                    
+                    <button class="btn btn-primary btn-full" onclick="showWhatsAppModal('Consultoria Digital')">
+                        <i data-lucide="message-circle"></i>
+                        Quero este produto
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="sobre" class="why-choose">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Por que escolher a <span class="highlight">Tanatela.dev</span>?
+                </h2>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="trending-up"></i>
+                    </div>
+                    <h3 class="feature-title">Resultados Comprovados</h3>
+                    <p class="feature-description">
+                        Nossos clientes veem aumento médio de 300% nas conversões
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="clock"></i>
+                    </div>
+                    <h3 class="feature-title">Entrega Rápida</h3>
+                    <p class="feature-description">
+                        Projetos entregues em até 7 dias úteis com qualidade premium
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="users"></i>
+                    </div>
+                    <h3 class="feature-title">Suporte Dedicado</h3>
+                    <p class="feature-description">
+                        Equipe especializada disponível para tirar suas dúvidas
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="globe"></i>
+                    </div>
+                    <h3 class="feature-title">Tecnologia Moderna</h3>
+                    <p class="feature-description">
+                        Utilizamos as mais recentes tecnologias do mercado
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="award"></i>
+                    </div>
+                    <h3 class="feature-title">Garantia de Qualidade</h3>
+                    <p class="feature-description">
+                        30 dias de garantia em todos os nossos produtos
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="smartphone"></i>
+                    </div>
+                    <h3 class="feature-title">100% Responsivo</h3>
+                    <p class="feature-description">
+                        Todos os projetos funcionam perfeitamente em mobile
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    O que nossos <span class="highlight">clientes</span> dizem
+                </h2>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "A landing page criada pela Tanatela.dev aumentou nossas vendas em 400%! Profissionais incríveis!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4 class="author-name">Maria Silva</h4>
+                            <p class="author-company">Boutique Fashion</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Site institucional perfeito! Recebo elogios diários dos clientes. Recomendo muito!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4 class="author-name">João Santos</h4>
+                            <p class="author-company">Consultoria JS</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "O e-commerce desenvolvido superou todas as expectativas. Vendas triplicaram no primeiro mês!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4 class="author-name">Ana Costa</h4>
+                            <p class="author-company">E-commerce AC</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">
+                    Pronto para <span class="highlight">decolar</span> seu negócio?
+                </h2>
+                <p class="cta-description">
+                    Entre em contato agora e receba uma consultoria gratuita para descobrir como podemos 
+                    ajudar seu negócio a crescer online!
+                </p>
+                <button class="btn btn-secondary btn-lg" onclick="showWhatsAppModal('Quero uma consultoria gratuita!')">
+                    <i data-lucide="message-circle"></i>
+                    Consultoria Gratuita Agora!
+                    <i data-lucide="arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Entre em <span class="highlight">Contato</span></h2>
+                <p class="section-description">
+                    Estamos prontos para transformar sua ideia em realidade
+                </p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i data-lucide="message-circle"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>WhatsApp</h3>
+                            <p>Resposta em até 5 minutos</p>
+                            <button class="btn btn-outline" onclick="showWhatsAppModal()">
+                                Enviar mensagem
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i data-lucide="mail"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>E-mail</h3>
+                            <p>tanatela.dev@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i data-lucide="clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Horário de Atendimento</h3>
+                            <p>Segunda a Sexta: 8h às 18h</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nome completo</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Telefone/WhatsApp</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Serviço de interesse</label>
+                            <select id="service" name="service" required>
+                                <option value="">Selecione um serviço</option>
+                                <option value="Landing Page Premium">Landing Page Premium</option>
+                                <option value="Site Institucional">Site Institucional</option>
+                                <option value="E-commerce Completo">E-commerce Completo</option>
+                                <option value="Sistema Personalizado">Sistema Personalizado</option>
+                                <option value="Manutenção & Suporte">Manutenção & Suporte</option>
+                                <option value="Consultoria Digital">Consultoria Digital</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Conte-nos mais sobre seu projeto..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i data-lucide="send"></i>
+                            Enviar mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-primary">Tanatela</span><span class="logo-secondary">.dev</span>
+                    </div>
+                    <p class="footer-description">
+                        Transformando ideias em soluções digitais de sucesso
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link">
+                            <i data-lucide="instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i data-lucide="github"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Produtos</h4>
+                        <ul>
+                            <li><a href="#produtos">Landing Pages</a></li>
+                            <li><a href="#produtos">Sites Institucionais</a></li>
+                            <li><a href="#produtos">E-commerce</a></li>
+                            <li><a href="#produtos">Sistemas</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Empresa</h4>
+                        <ul>
+                            <li><a href="#sobre">Sobre nós</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                            <li><a href="#">Portfólio</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Suporte</h4>
+                        <ul>
+                            <li><a href="#">Central de Ajuda</a></li>
+                            <li><a href="#">Documentação</a></li>
+                            <li><a href="#">Status</a></li>
+                            <li><a href="#">Termos de Uso</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Tanatela.dev. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-float" onclick="showWhatsAppModal()">
+        <i data-lucide="message-circle"></i>
+    </div>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <span class="logo-primary">Tanatela</span><span class="logo-secondary">.dev</span>
+            </div>
+            <div class="loading-spinner"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+
